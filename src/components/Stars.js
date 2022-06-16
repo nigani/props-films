@@ -7,9 +7,7 @@ export default function Stars(props) {
   const { count } = props;
   return (count >= 1) & (count <= 5) ? (
     <ul class="card-body-stars u-clearfix">
-      {Array(count)
-        .fill()
-        .map((_) => (
+      {Array(count).fill().map((_) => (
           <li>
             <Star key={nanoid()} />
           </li>
