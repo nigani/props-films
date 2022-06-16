@@ -1,11 +1,15 @@
 import React from "react";
-import "./style.css";
+import Stars from './components/Stars.js';
+import './App.css';
 
 export default function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <>
+      <h1>Демонстрация отображения рейтинга</h1>
+      <Stars />
+      <Stars count={1} />
+      <Stars count={3} />
+      <Stars count={5} />
+    </>
   );
 }
